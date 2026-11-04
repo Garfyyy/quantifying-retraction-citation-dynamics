@@ -1,6 +1,10 @@
-# Quantifying the Dynamics of Harm Caused by Retracted Research
+# Quantifying Citation Dynamics Around Retracted Research
 
-A framework to quantify and analyze the harm of retracted papers through citation networks. Key findings:
+A framework to quantify and analyze the harm of retracted papers through citation networks. 
+
+> **Note:**&#8203; "harm" mainly refers to citation dynamics and citation shortfalls.
+
+Key findings:
 
 - Retracted papers cause harm through "attention escape" mechanism
 
@@ -10,7 +14,7 @@ A framework to quantify and analyze the harm of retracted papers through citatio
   
 ## Contents
 
-- [Quantifying the Dynamics of Harm Caused by Retracted Research](#quantifying-the-dynamics-of-harm-caused-by-retracted-research)
+- [Quantifying Citation Dynamics Around Retracted Research](#quantifying-citation-dynamics-around-retracted-research)
   - [Contents](#contents)
   - [System Requirements](#system-requirements)
   - [Data Prerequisites](#data-prerequisites)
