@@ -2,7 +2,7 @@
 
 A framework to quantify and analyze the harm of retracted papers through citation networks. 
 
-> **Note:**&#8203; "harm" mainly refers to citation dynamics and citation shortfalls.
+> **Note:**&#8203; Throughout this work, "harm" mainly refers to citation dynamics, citation shortfalls, and the like.
 
 Key findings:
 
