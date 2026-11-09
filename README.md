@@ -1,16 +1,18 @@
 # Quantifying Citation Dynamics Around Retracted Research
 
-A framework to quantify and analyze the harm of retracted papers through citation networks. 
-
-> **Note:**&#8203; Throughout this work, "harm" mainly refers to citation dynamics, citation shortfalls, and the like.
+A framework to quantify and analyze the citation dynamics around retracted papers through citation networks. 
 
 Key findings:
 
-- Retracted papers cause harm through "attention escape" mechanism
+- Papers citing retracted studies have smaller citation shortfalls during the early observation years, but these shortfalls become more pronounced over time.
 
-- Indirect citations suffer more harm than direct citations
+- Papers that indirectly cite retracted papers have greater citation shortfalls than those that directly cite them, with larger shortfalls at greater citation distances.
 
-- Lower JIF journals experience greater harm from retractions
+- Papers published in journals with an impact factor less than 10 show substantial citation shortfalls across all six citation distances.
+
+These patterns suggest a possible “attention escape” mechanism. We observe larger citation shortfalls in older and indirectly citing papers, alongside substantial shortfalls in journals with an impact factor below 10. Yet these papers’ connections to retracted research may remain outside routine scrutiny.
+
+> **Note:**&#8203; > Documentation in this repository uses citation dynamics and citation shortfalls. In the code, the same quantities are often named `harm` (and related identifiers) for brevity; they refer to those citation measures, not a separate quantity.
   
 ## Contents
 
@@ -21,8 +23,8 @@ Key findings:
   - [Repo Contents](#repo-contents)
   - [Installation Guide](#installation-guide)
   - [Demo](#demo)
-    - [1. Quantification of Harm](#1-quantification-of-harm)
-    - [2. Calculate Quartile Statistics for Harm](#2-calculate-quartile-statistics-for-harm)
+    - [1. Quantification of Citation Dynamics](#1-quantification-of-citation-dynamics)
+    - [2. Calculate Quartile Statistics for Citation Dynamics](#2-calculate-quartile-statistics-for-citation-dynamics)
     - [3. Plotting](#3-plotting)
   
 ## System Requirements
@@ -104,7 +106,7 @@ SciSciNet Databas offering comprehensive author, journal metadata and linkage in
 
 Change the directory, install the dependencies for each part, and refer to the README of each part for the process:
 
-1. **Quantification of Harm**
+1. **Quantification of Citation Dynamics**
 
 ```bash
 cd quantification
@@ -114,7 +116,7 @@ pip install -r requirements.txt
 
 The installation process takes about 10 seconds.
 
-This section refers to the README, which can be accessed via the link. [Quantification README](https://github.com/Garfyyy/quantifying-retraction-harm/tree/master/quantification)
+This section refers to the README, which can be accessed via the link. [Quantification README](https://github.com/Garfyyy/quantifying-retraction-citation-dynamics/tree/master/quantification)
 
 2. **plotting**
 
@@ -126,11 +128,11 @@ pip install -r requirements.txt
 
 The installation process takes about 10 seconds.
 
-This section refers to the README, which can be accessed via the link. [Plotting README](https://github.com/Garfyyy/quantifying-retraction-harm/tree/master/plotting)
+This section refers to the README, which can be accessed via the link. [Plotting README](https://github.com/Garfyyy/quantifying-retraction-citation-dynamics/tree/master/plotting)
 
 ## Demo
 
-### 1. Quantification of Harm
+### 1. Quantification of Citation Dynamics
 
 ```bash
 cd plotting
@@ -141,7 +143,7 @@ bash mult_v3.sh
 ```
 This gives us the harm received by 100 demo papers within 10 years of publication.
 
-### 2. Calculate Quartile Statistics for Harm
+### 2. Calculate Quartile Statistics for Citation Dynamics
 
 ```bash
 python calc_harm.py
