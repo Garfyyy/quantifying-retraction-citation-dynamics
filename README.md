@@ -93,7 +93,7 @@ SciSciNet Databas offering comprehensive author, journal metadata and linkage in
 
 ## Repo Contents
 
-**quantification.** This directory contains the code for quantifying the harm caused by retracted research.
+**quantification.** This directory contains the code for quantifying the citation dynamics caused by retracted research.
 
 **plotting.** This directory contains the analysis and visualization code for processing the research data in this paper.
 
@@ -141,7 +141,7 @@ bash mult_v3.sh
 # Output: Quantized results (e.g., ./res/paper_c1/quantize_0_0.parquet),  
 # containing both experimental group and control group results.
 ```
-This gives us the harm received by 100 demo papers within 10 years of publication.
+This gives us the citation dynamics (named `harm` in the code and demo graphs for brevity) received by 100 demo papers within 10 years of publication.
 
 ### 2. Calculate Quartile Statistics for Citation Dynamics
 
@@ -154,7 +154,7 @@ python calc_harm.py
 # q3: [0.46927966   0.57701758   0.6498847  0.53979239  0.64233888  0.69115027 0.85652007 1. 0.78139134 1.]
 ```
 
-In this demo, we obtain the first quartile (q1), median (q2), and third quartile (q3) values of harm for the 'Medicine' field over a 10-year period.
+In this demo, we obtain the first quartile (q1), median (q2), and third quartile (q3) values of citation dynamics (named `harm` in the code and demo graphs for brevity) for the 'Medicine' field over a 10-year period.
 The datasets used for quantification and quartile calculations are very large. The calculation results in the demo are not accurate and are for reference only. 
 
 ### 3. Plotting
@@ -179,22 +179,22 @@ cd plotting/src/
 # The definition of paper_cn is detailed in the "Citation Distance" section under 
 # "Materials and Methods" in the paper.
 
-# The statistical methods for quantifying harm are defined in the "Statistics" 
+# The statistical methods for quantifying citation dynamics are defined in the "Statistics" 
 # section under "Materials and Methods" in the paper.
 
-# Overall plotting of harm for paper_c1
+# Overall plotting of citation dynamics for paper_c1
 python fig2_final.py
 
-# Overall plotting of harm for paper_c[2-6]
+# Overall plotting of citation dynamics for paper_c[2-6]
 python fig3.py
 
-# Overall plotting of harm for paper_c[2-6] (drop duplicates)
+# Overall plotting of citation dynamics for paper_c[2-6] (drop duplicates)
 python fig3_s1.py
 
-# Different JIF intervals plotting of harm for paper_c[1-6]
+# Different JIF intervals plotting of citation dynamics for paper_c[1-6]
 python fig4_v3.py
 
-# Citation time plotting of harm for paper_c[1-6]
+# Citation time plotting of citation dynamics for paper_c[1-6]
 python fig_5.py
 ```
 
@@ -205,6 +205,8 @@ python fig_5.py
 - Runtime measurements are based on Windows 11 with i7-12700 CPU and 16GB RAM
 
 **Demo fig2a output example**
+
+> **Note:**&#8203; > Documentation in this repository uses citation dynamics and citation shortfalls. In the code and demo graphs, we use `harm` to represent citation shortfalls for brevity.
 
 Experimental Group
 ![fig2a_experiment](fig2a_experiment.png)
