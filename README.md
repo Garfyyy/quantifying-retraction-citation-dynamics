@@ -206,7 +206,7 @@ python fig_5.py
 
 **Demo fig2a output example**
 
-> **Note:**&#8203; > Documentation in this repository uses citation dynamics and citation shortfalls. In the code and demo graphs, we use `harm` to represent citation shortfalls for brevity.
+> **Note:**&#8203; > In the code and demo graphs, we use `harm` to represent citation dynamics and citation shortfalls for brevity.
 
 Experimental Group
 ![fig2a_experiment](fig2a_experiment.png)
