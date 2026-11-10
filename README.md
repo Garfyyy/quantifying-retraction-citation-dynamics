@@ -93,7 +93,7 @@ SciSciNet Databas offering comprehensive author, journal metadata and linkage in
 
 ## Repo Contents
 
-**quantification.** This directory contains the code for quantifying the citation dynamics caused by retracted research.
+**quantification.** This directory contains the code for quantifying the citation dynamics around retracted research.
 
 **plotting.** This directory contains the analysis and visualization code for processing the research data in this paper.
 
